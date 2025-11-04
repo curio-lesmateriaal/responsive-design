@@ -1,0 +1,570 @@
+<!doctype html>
+<html lang="nl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Responsive Web Design Opdrachten – DevFlow</title>
+  <link rel="stylesheet" href="./styles.css">
+  <meta name="color-scheme" content="light">
+</head>
+<body>
+  <header class="header">
+    <div class="container nav">
+      <div class="nav-left">
+        <div class="brand"><span class="dot"></span> DevFlow</div>
+        <a class="active nav-opdrachten" href="./opdrachten.html">Opdrachten</a>
+      </div>
+      <nav>
+        <a href="./index.html">Home</a>
+        <a href="./index.html#features">Features</a>
+        <a href="./index.html#pricing">Pricing</a>
+        <a href="#contact" class="btn-nav">Log in</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <div class="container">
+      <section class="hero">
+        <div class="badges" style="justify-content:center; margin-bottom:16px;">
+          <span class="badge" style="background-color:#f0f5ff; color:#2563eb; border-color:#93c5fd;">Opdrachten</span>
+        </div>
+        <h1>Responsive Web Design Leren</h1>
+        <p class="hero-subtitle">Welkom bij de opdrachtenpagina! Hier leer je responsive web design door praktische opdrachten uit te voeren, vragen te beantwoorden en de bestaande code aan te passen.</p>
+      </section>
+
+      <!-- Introductie Panel -->
+      <section class="section" style="padding-top:0;">
+        <div class="panel intro-panel">
+          <div style="display:flex; align-items:flex-start; gap:20px; flex-wrap:wrap;">
+            <div style="flex:1; min-width:250px;">
+              <h2 style="margin:0 0 12px; font-size:24px;">Wat ga je leren?</h2>
+              <p style="margin:0 0 16px; color:#666666; line-height:1.7;">Op deze pagina werk je aan praktische opdrachten om responsive web design onder de knie te krijgen. De opdrachten zijn onderverdeeld in drie typen:</p>
+              <ul style="margin:0; padding-left:20px; color:#666666; line-height:1.8;">
+                <li><strong>Multiple Choice</strong> – Test je kennis met interactieve vragen</li>
+                <li><strong>Uitzoekopdrachten</strong> – Onderzoek en documenteer CSS concepten</li>
+                <li><strong>Doe-opdrachten</strong> – Pas de code aan en voeg features toe</li>
+              </ul>
+            </div>
+            <div style="flex:0 0 auto; background-color:#f0f5ff; padding:20px; border-radius:12px; min-width:200px;">
+              <h3 style="margin:0 0 12px; font-size:18px; color:#2563eb;">💡 Tip</h3>
+              <p style="margin:0; color:#1e40af; font-size:14px; line-height:1.6;">Open de browser developer tools (F12) en kijk hoe de CSS zich gedraagt bij verschillende schermgroottes. Dit helpt je om responsive design echt te begrijpen!</p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <!-- Tabs navigatie -->
+    <section class="section" style="padding-top:0; padding-bottom:0;">
+      <div class="container">
+        <div class="tabs-nav">
+          <button class="tab-btn active" data-tab="mc">Meerkeuzeopdrachten</button>
+          <button class="tab-btn" data-tab="uitzoek">Uitzoekopdrachten</button>
+          <button class="tab-btn" data-tab="doe">Doe-opdrachten</button>
+          <button class="tab-btn" data-tab="finale">Finale Opdracht</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Multiple Choice over Responsive Design -->
+    <section class="section tab-content tab-mc">
+      <div class="container">
+        <div class="section-header">
+          <h2>Test je kennis – Multiple Choice</h2>
+          <p>Beantwoord deze vragen over responsive design. Als je het goede antwoord kiest, krijg je direct feedback met confetti! 🎉</p>
+        </div>
+        
+        <div class="opdrachten-list">
+          <div class="opdracht-item mcq">
+            <h3>Vraag 1: Wat doet een media query?</h3>
+            <p>Kies het beste antwoord.</p>
+            <div class="options" style="display:flex; flex-wrap:wrap; gap:8px; margin-top:16px;">
+              <button class="btn" data-correct="false">A) Het voegt een JavaScript event toe</button>
+              <button class="btn" data-correct="true">B) Het past CSS toe bij bepaalde schermgroottes</button>
+              <button class="btn" data-correct="false">C) Het laadt externe fonts</button>
+            </div>
+            <p class="feedback" style="margin-top:12px; color:#666666;"></p>
+          </div>
+
+          <div class="opdracht-item mcq">
+            <h3>Vraag 2: Wat is het verschil tussen Flexbox en Grid?</h3>
+            <p>Kies het juiste antwoord.</p>
+            <div class="options" style="display:flex; flex-wrap:wrap; gap:8px; margin-top:16px;">
+              <button class="btn" data-correct="false">A) Flexbox is alleen voor horizontale layouts, Grid alleen voor verticale</button>
+              <button class="btn" data-correct="true">B) Flexbox is voor één-dimensionale layouts, Grid voor twee-dimensionale</button>
+              <button class="btn" data-correct="false">C) Er is geen verschil, ze doen hetzelfde</button>
+            </div>
+            <p class="feedback" style="margin-top:12px; color:#666666;"></p>
+          </div>
+
+          <div class="opdracht-item mcq">
+            <h3>Vraag 3: Wat betekent "mobile-first" design?</h3>
+            <p>Kies het beste antwoord.</p>
+            <div class="options" style="display:flex; flex-wrap:wrap; gap:8px; margin-top:16px;">
+              <button class="btn" data-correct="true">A) Eerst ontwerpen voor mobiel, dan uitbreiden voor grotere schermen</button>
+              <button class="btn" data-correct="false">B) Alleen voor mobiele apparaten ontwerpen</button>
+              <button class="btn" data-correct="false">C) Mobiele versie is altijd belangrijker dan desktop</button>
+            </div>
+            <p class="feedback" style="margin-top:12px; color:#666666;"></p>
+          </div>
+
+          <div class="opdracht-item mcq">
+            <h3>Vraag 4: Wat is de standaard viewport width voor een mobiel apparaat?</h3>
+            <p>Kies het juiste antwoord.</p>
+            <div class="options" style="display:flex; flex-wrap:wrap; gap:8px; margin-top:16px;">
+              <button class="btn" data-correct="false">A) 320px</button>
+              <button class="btn" data-correct="false">B) 480px</button>
+              <button class="btn" data-correct="true">C) 980px (zonder meta viewport tag)</button>
+            </div>
+            <p class="feedback" style="margin-top:12px; color:#666666;"></p>
+          </div>
+
+          <div class="opdracht-item mcq">
+            <h3>Vraag 5: Welke CSS-eigenschap wordt gebruikt om afbeeldingen responsive te maken?</h3>
+            <p>Kies het beste antwoord.</p>
+            <div class="options" style="display:flex; flex-wrap:wrap; gap:8px; margin-top:16px;">
+              <button class="btn" data-correct="false">A) width: 100%</button>
+              <button class="btn" data-correct="true">B) max-width: 100%</button>
+              <button class="btn" data-correct="false">C) scale: 100%</button>
+            </div>
+            <p class="feedback" style="margin-top:12px; color:#666666;"></p>
+          </div>
+
+          <div class="opdracht-item mcq">
+            <h3>Vraag 6: Wat is een breakpoint?</h3>
+            <p>Kies het juiste antwoord.</p>
+            <div class="options" style="display:flex; flex-wrap:wrap; gap:8px; margin-top:16px;">
+              <button class="btn" data-correct="false">A) Een punt waar de website breekt</button>
+              <button class="btn" data-correct="true">B) Een schermgrootte waar de layout verandert</button>
+              <button class="btn" data-correct="false">C) Een CSS-fout in responsive design</button>
+            </div>
+            <p class="feedback" style="margin-top:12px; color:#666666;"></p>
+          </div>
+
+          <div class="opdracht-item mcq">
+            <h3>Vraag 7: Wat doet `position: sticky`?</h3>
+            <p>Kies het beste antwoord.</p>
+            <div class="options" style="display:flex; flex-wrap:wrap; gap:8px; margin-top:16px;">
+              <button class="btn" data-correct="false">A) Element blijft altijd op dezelfde plek</button>
+              <button class="btn" data-correct="true">B) Element plakt aan de top tijdens scrollen</button>
+              <button class="btn" data-correct="false">C) Element verdwijnt bij scrollen</button>
+            </div>
+            <p class="feedback" style="margin-top:12px; color:#666666;"></p>
+          </div>
+
+          <div class="opdracht-item mcq">
+            <h3>Vraag 8: Welke viewport unit is relatief aan de viewport hoogte?</h3>
+            <p>Kies het juiste antwoord.</p>
+            <div class="options" style="display:flex; flex-wrap:wrap; gap:8px; margin-top:16px;">
+              <button class="btn" data-correct="false">A) vw</button>
+              <button class="btn" data-correct="true">B) vh</button>
+              <button class="btn" data-correct="false">C) vmin</button>
+            </div>
+            <p class="feedback" style="margin-top:12px; color:#666666;"></p>
+          </div>
+
+          <div class="opdracht-item mcq">
+            <h3>Vraag 9: Wat is het doel van `clamp()` in CSS?</h3>
+            <p>Kies het beste antwoord.</p>
+            <div class="options" style="display:flex; flex-wrap:wrap; gap:8px; margin-top:16px;">
+              <button class="btn" data-correct="true">A) Een waarde tussen minimum en maximum houden</button>
+              <button class="btn" data-correct="false">B) Een waarde vermenigvuldigen</button>
+              <button class="btn" data-correct="false">C) Een waarde afronden</button>
+            </div>
+            <p class="feedback" style="margin-top:12px; color:#666666;"></p>
+          </div>
+
+          <div class="opdracht-item mcq">
+            <h3>Vraag 10: Welke meta tag is essentieel voor responsive design?</h3>
+            <p>Kies het juiste antwoord.</p>
+            <div class="options" style="display:flex; flex-wrap:wrap; gap:8px; margin-top:16px;">
+              <button class="btn" data-correct="false">A) &lt;meta name="description"&gt;</button>
+              <button class="btn" data-correct="true">B) &lt;meta name="viewport"&gt;</button>
+              <button class="btn" data-correct="false">C) &lt;meta name="author"&gt;</button>
+            </div>
+            <p class="feedback" style="margin-top:12px; color:#666666;"></p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section tab-content tab-uitzoek" style="display:none;">
+      <div class="container">
+        <div class="section-header">
+          <h2>Uitzoekopdrachten</h2>
+          <p>Bij deze opdrachten moet je de bestaande code bestuderen. Open <code>styles.css</code> en <code>index.html</code> in je editor en beantwoord de vragen door alleen naar de code te kijken. Je antwoorden worden automatisch opgeslagen.</p>
+        </div>
+        
+        <div class="opdrachten-list">
+          <div class="opdracht-item uitzoek-opdracht" data-question-id="1">
+            <h3>Vraag 1: Breakpoints</h3>
+            <p>Bij welke schermgrootte (in pixels) verandert het grid van 3 kolommen naar 1 kolom?</p>
+            <textarea class="answer-input" placeholder="Typ je antwoord hier..." data-question="1"></textarea>
+            <p class="save-indicator" style="margin-top:8px; font-size:13px; color:#999; display:none;">✓ Opgeslagen</p>
+          </div>
+
+          <div class="opdracht-item uitzoek-opdracht" data-question-id="2">
+            <h3>Vraag 2: Font sizes</h3>
+            <p>Welke font-size gebruikt <code>.hero h1</code> op mobiel (≤700px)?</p>
+            <textarea class="answer-input" placeholder="Typ je antwoord hier..." data-question="2"></textarea>
+            <p class="save-indicator" style="margin-top:8px; font-size:13px; color:#999; display:none;">✓ Opgeslagen</p>
+          </div>
+
+          <div class="opdracht-item uitzoek-opdracht" data-question-id="3">
+            <h3>Vraag 3: Navigatie kleuren</h3>
+            <p>Welke kleur heeft de tekst van <code>.nav nav a</code> standaard (niet hover/active)?</p>
+            <textarea class="answer-input" placeholder="Typ je antwoord hier..." data-question="3"></textarea>
+            <p class="save-indicator" style="margin-top:8px; font-size:13px; color:#999; display:none;">✓ Opgeslagen</p>
+          </div>
+
+          <div class="opdracht-item uitzoek-opdracht" data-question-id="4">
+            <h3>Vraag 4: Container breedte</h3>
+            <p>Wat is de maximale breedte (max-width) van de container?</p>
+            <textarea class="answer-input" placeholder="Typ je antwoord hier..." data-question="4"></textarea>
+            <p class="save-indicator" style="margin-top:8px; font-size:13px; color:#999; display:none;">✓ Opgeslagen</p>
+          </div>
+
+          <div class="opdracht-item uitzoek-opdracht" data-question-id="5">
+            <h3>Vraag 5: Section padding</h3>
+            <p>Welke padding gebruikt <code>.section</code> voor boven en onder (bij normale secties)?</p>
+            <textarea class="answer-input" placeholder="Typ je antwoord hier..." data-question="5"></textarea>
+            <p class="save-indicator" style="margin-top:8px; font-size:13px; color:#999; display:none;">✓ Opgeslagen</p>
+          </div>
+
+          <div class="opdracht-item uitzoek-opdracht" data-question-id="6">
+            <h3>Vraag 6: Badge kleuren</h3>
+            <p>Welke achtergrondkleur heeft <code>.badge.ok</code>?</p>
+            <textarea class="answer-input" placeholder="Typ je antwoord hier..." data-question="6"></textarea>
+            <p class="save-indicator" style="margin-top:8px; font-size:13px; color:#999; display:none;">✓ Opgeslagen</p>
+          </div>
+
+          <div class="opdracht-item uitzoek-opdracht" data-question-id="7">
+            <h3>Vraag 7: Border radius</h3>
+            <p>Welke CSS-eigenschap rondt de hoeken van navigatie links af, en welke waarde gebruikt deze?</p>
+            <textarea class="answer-input" placeholder="Typ je antwoord hier..." data-question="7"></textarea>
+            <p class="save-indicator" style="margin-top:8px; font-size:13px; color:#999; display:none;">✓ Opgeslagen</p>
+          </div>
+
+          <div class="opdracht-item uitzoek-opdracht" data-question-id="8">
+            <h3>Vraag 8: Grid kolommen</h3>
+            <p>Hoeveel kolommen heeft <code>.grid-3</code> op tablets (≤900px maar >700px)?</p>
+            <textarea class="answer-input" placeholder="Typ je antwoord hier..." data-question="8"></textarea>
+            <p class="save-indicator" style="margin-top:8px; font-size:13px; color:#999; display:none;">✓ Opgeslagen</p>
+          </div>
+
+          <div class="opdracht-item uitzoek-opdracht" data-question-id="9">
+            <h3>Vraag 9: Content grid</h3>
+            <p>Welke grid-template-columns gebruikt <code>.content-grid</code> op desktop?</p>
+            <textarea class="answer-input" placeholder="Typ je antwoord hier..." data-question="9"></textarea>
+            <p class="save-indicator" style="margin-top:8px; font-size:13px; color:#999; display:none;">✓ Opgeslagen</p>
+          </div>
+
+          <div class="opdracht-item uitzoek-opdracht" data-question-id="10">
+            <h3>Vraag 10: Sidebar position</h3>
+            <p>Wat gebeurt er met de sidebar op mobiel (welke eigenschap verandert)?</p>
+            <textarea class="answer-input" placeholder="Typ je antwoord hier..." data-question="10"></textarea>
+            <p class="save-indicator" style="margin-top:8px; font-size:13px; color:#999; display:none;">✓ Opgeslagen</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section tab-content tab-doe" style="display:none;">
+      <div class="container">
+        <div class="section-header">
+          <h2>Doe-opdrachten</h2>
+          <p>Bij deze opdrachten ga je de CSS en HTML aanpassen. Voeg nieuwe code toe, test in de browser en maak de site responsiever!</p>
+        </div>
+        
+        <div class="opdrachten-list">
+          <div class="opdracht-item">
+            <h3>Opdracht 1: Extra breakpoint toevoegen</h3>
+            <p>Voeg een nieuw breakpoint toe voor tablets (bijv. 900px).</p>
+            <ul class="list">
+              <li>Zet het <code>.grid</code> op 2 kolommen bij schermen ≤900px en >700px.</li>
+              <li>Verklein de <code>.hero h1</code> font-size licht bij ≤900px (bijv. 36px).</li>
+              <li>Test in de browser door venster te schalen.</li>
+            </ul>
+          </div>
+
+          <div class="opdracht-item">
+            <h3>Opdracht 2: Mobiele navigatie verbeteren</h3>
+            <p>Maak de navigatie compacter en gebruiksvriendelijker op kleine schermen.</p>
+            <ul class="list">
+              <li>Verminder de padding van <code>.nav</code> op schermen ≤700px.</li>
+              <li>Maak de <code>.btn</code> touchvriendelijk met een minimum hoogte van 44px op mobiel.</li>
+              <li>Zorg dat de navigatie links goed klikbaar zijn op touch devices.</li>
+            </ul>
+          </div>
+
+          <div class="opdracht-item">
+            <h3>Opdracht 3: Responsive afbeeldingen</h3>
+            <p>Voeg een voorbeeldafbeelding toe en maak die schaalbaar.</p>
+            <ul class="list">
+              <li>Voeg in <code>index.html</code> een afbeelding toe in een artikel card.</li>
+              <li>Maak een CSS-regel voor <code>img</code> met <code>max-width: 100%</code> en <code>height: auto</code>.</li>
+              <li>Controleer dat er geen horizontale scroll ontstaat op mobiel.</li>
+            </ul>
+          </div>
+
+          <div class="opdracht-item">
+            <h3>Opdracht 4: Nieuwe badge variant</h3>
+            <p>Voeg een nieuwe badge variant toe met een andere kleur.</p>
+            <ul class="list">
+              <li>Maak een nieuwe class <code>.badge.info</code> met een paarse of cyaan kleur.</li>
+              <li>Gebruik dezelfde structuur als de bestaande badge varianten.</li>
+              <li>Test de badge door deze toe te voegen aan een artikel card.</li>
+            </ul>
+          </div>
+
+          <div class="opdracht-item">
+            <h3>Opdracht 5: Sidebar sticky gedrag</h3>
+            <p>Pas het sticky gedrag van de sidebar aan.</p>
+            <ul class="list">
+              <li>Zorg dat de sidebar sticky blijft tijdens scrollen (controleer of dit al werkt).</li>
+              <li>Pas de <code>top</code> waarde aan zodat er ruimte is onder de header.</li>
+              <li>Zorg dat op mobiel de sidebar niet sticky is (dit zou al moeten werken).</li>
+            </ul>
+          </div>
+
+          <div class="opdracht-item">
+            <h3>Opdracht 6: Font sizes responsive maken</h3>
+            <p>Maak de font-sizes nog responsiever met clamp() of viewport units.</p>
+            <ul class="list">
+              <li>Gebruik <code>clamp()</code> voor <code>.hero h1</code> om tussen een minimum en maximum te blijven.</li>
+              <li>Bijvoorbeeld: <code>font-size: clamp(28px, 4vw, 48px)</code></li>
+              <li>Test hoe de tekst schaalt bij verschillende schermgroottes.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Finale Opdracht -->
+    <section class="section tab-content tab-finale" style="display:none;">
+      <div class="container">
+        <div class="section-header">
+          <h2>Finale Opdracht</h2>
+          <p>Deze finale opdracht combineert alles wat je hebt geleerd over responsive web design. Maak een volledig nieuwe, responsive contact pagina.</p>
+        </div>
+        
+        <div class="opdrachten-list">
+          <div class="opdracht-item finale-opdracht">
+            <h3 class="finale-title">🎯 Finale Opdracht: Complete Responsive Contact Pagina</h3>
+            <p class="finale-intro">Deze finale opdracht combineert alles wat je hebt geleerd. Maak een volledig nieuwe, responsive contact pagina.</p>
+            
+            <div class="finale-box finale-box-white">
+              <h4 class="finale-box-title">Opdracht:</h4>
+              <p>Maak een nieuwe HTML-pagina <code>contact.html</code> met een volledig responsive contactformulier en contactinformatie.</p>
+              
+              <h4 class="finale-box-title">Vereisten:</h4>
+              <ul class="list finale-list">
+                <li><strong>HTML Structuur:</strong> Maak een nieuwe <code>contact.html</code> met dezelfde header en footer als <code>index.html</code></li>
+                <li><strong>Grid Layout:</strong> Gebruik CSS Grid om de pagina te verdelen in twee kolommen (formulier links, contactinfo rechts) op desktop</li>
+                <li><strong>Responsive Breakpoints:</strong> 
+                  <ul class="finale-sublist">
+                    <li>Desktop (>900px): 2 kolommen naast elkaar</li>
+                    <li>Tablet (700px-900px): 2 kolommen, maar compacter</li>
+                    <li>Mobiel (≤700px): 1 kolom, stack verticaal</li>
+                  </ul>
+                </li>
+                <li><strong>Contactformulier:</strong> Maak een formulier met velden voor naam, email, onderwerp en bericht. Styling consistent met de rest van de site</li>
+                <li><strong>Contact Informatie:</strong> Voeg een sectie toe met adres, telefoon, email (gebruik icons of emoji's)</li>
+                <li><strong>Responsive Typography:</strong> Gebruik <code>clamp()</code> voor ten minste één heading (bijv. de hoofdtitel)</li>
+                <li><strong>Buttons:</strong> Maak een submit button die responsive is (minimaal 44px hoog op mobiel)</li>
+                <li><strong>Images:</strong> Voeg eventueel een contactafbeelding toe die responsive schaalt</li>
+                <li><strong>Spacing:</strong> Gebruik consistente padding en margins die aanpassen op verschillende schermgroottes</li>
+              </ul>
+            </div>
+
+            <div class="finale-box finale-box-green">
+              <h4 class="finale-box-title">✅ Checklist voor voltooiing:</h4>
+              <ul class="list finale-list">
+                <li>Pagina werkt op desktop, tablet en mobiel</li>
+                <li>Geen horizontale scroll op welke schermgrootte dan ook</li>
+                <li>Formulier velden zijn goed klikbaar op touch devices</li>
+                <li>Tekst is leesbaar op alle schermgroottes</li>
+                <li>Layout verandert logisch bij breakpoints</li>
+                <li>Styling is consistent met de rest van de website</li>
+              </ul>
+            </div>
+
+            <div class="finale-box finale-box-yellow">
+              <h4 class="finale-box-title">💡 Extra uitdaging (optioneel):</h4>
+              <ul class="list finale-list">
+                <li>Voeg een interactieve kaart toe (bijv. Google Maps iframe) die responsive is</li>
+                <li>Maak een "Stuur bericht" animatie met CSS transitions</li>
+                <li>Voeg form validatie toe met HTML5 required attributes</li>
+                <li>Maak de header sticky en pas de sidebar/padding aan bij scrollen</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-section">
+          <div class="brand"><span class="dot"></span> DevFlow</div>
+          <p>De modernste manier om code te delen en te deployen.</p>
+        </div>
+        <div class="footer-section">
+          <h4>Product</h4>
+          <ul class="footer-links">
+            <li><a href="./index.html#features">Features</a></li>
+            <li><a href="./index.html#pricing">Pricing</a></li>
+            <li><a href="#security">Security</a></li>
+            <li><a href="#changelog">Changelog</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h4>Resources</h4>
+          <ul class="footer-links">
+            <li><a href="./opdrachten.html">Documentatie</a></li>
+            <li><a href="#tutorials">Tutorials</a></li>
+            <li><a href="#blog">Blog</a></li>
+            <li><a href="#support">Support</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h4>Company</h4>
+          <ul class="footer-links">
+            <li><a href="#about">Over ons</a></li>
+            <li><a href="#careers">Carrière</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="#privacy">Privacy</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2024 DevFlow. Alle rechten voorbehouden.</p>
+      </div>
+    </div>
+  </footer>
+  
+  <!-- Confetti en quiz-logica -->
+  <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.3/dist/confetti.browser.min.js"></script>
+  <script>
+    // Multiple-choice quiz logica
+    document.addEventListener('click', function (e) {
+      if (e.target.matches('.mcq .btn')) {
+        const button = e.target;
+        const card = button.closest('.mcq');
+        const isCorrect = button.getAttribute('data-correct') === 'true';
+        const feedback = card.querySelector('.feedback');
+        const buttons = card.querySelectorAll('.btn');
+
+        // voorkom dubbel klikken
+        if (card.dataset.answered) return;
+
+        if (isCorrect) {
+          feedback.textContent = '✓ Goed gedaan! Dit is het juiste antwoord.';
+          feedback.style.color = '#16a34a';
+          feedback.style.fontWeight = '500';
+          card.dataset.answered = 'true';
+          buttons.forEach(b => b.disabled = true);
+          // start confetti
+          if (window.confetti) {
+            const duration = 800;
+            const end = Date.now() + duration;
+            const frame = () => {
+              confetti({
+                particleCount: 50,
+                startVelocity: 45,
+                spread: 60,
+                origin: { x: Math.random(), y: 0.2 }
+              });
+              if (Date.now() < end) requestAnimationFrame(frame);
+            };
+            frame();
+          }
+        } else {
+          feedback.textContent = 'Niet helemaal. Probeer een andere optie!';
+          feedback.style.color = '#d97706';
+        }
+      }
+    });
+
+    // LocalStorage voor uitzoekopdrachten
+    const STORAGE_PREFIX = 'uitzoek_opdracht_';
+
+    // Laad opgeslagen antwoorden bij pageload
+    document.addEventListener('DOMContentLoaded', function() {
+      const inputs = document.querySelectorAll('.answer-input');
+      inputs.forEach(input => {
+        const questionId = input.getAttribute('data-question');
+        const savedAnswer = localStorage.getItem(STORAGE_PREFIX + questionId);
+        if (savedAnswer) {
+          input.value = savedAnswer;
+        }
+      });
+    });
+
+    // Sla antwoorden op bij wijziging
+    document.addEventListener('input', function(e) {
+      if (e.target.matches('.answer-input')) {
+        const questionId = e.target.getAttribute('data-question');
+        const answer = e.target.value;
+        const opdrachtItem = e.target.closest('.uitzoek-opdracht');
+        const saveIndicator = opdrachtItem.querySelector('.save-indicator');
+
+        // Sla op in localStorage
+        localStorage.setItem(STORAGE_PREFIX + questionId, answer);
+
+        // Toon save indicator
+        saveIndicator.style.display = 'block';
+        setTimeout(() => {
+          saveIndicator.style.display = 'none';
+        }, 2000);
+      }
+    });
+
+    // Tab functionaliteit
+    document.addEventListener('DOMContentLoaded', function() {
+      const tabButtons = document.querySelectorAll('.tab-btn');
+      const tabContents = document.querySelectorAll('.tab-content');
+
+      tabButtons.forEach(button => {
+        button.addEventListener('click', function() {
+          const targetTab = this.getAttribute('data-tab');
+
+          // Verwijder active class van alle buttons
+          tabButtons.forEach(btn => btn.classList.remove('active'));
+
+          // Voeg active class toe aan geklikte button
+          this.classList.add('active');
+
+          // Verberg alle tab contents
+          tabContents.forEach(content => {
+            content.style.display = 'none';
+          });
+
+          // Toon de geselecteerde tab content
+          const targetContent = document.querySelector(`.tab-${targetTab}`);
+          if (targetContent) {
+            targetContent.style.display = 'block';
+          }
+
+          // Sla actieve tab op in localStorage
+          localStorage.setItem('activeTab', targetTab);
+        });
+      });
+
+      // Laad opgeslagen tab bij page load
+      const savedTab = localStorage.getItem('activeTab');
+      if (savedTab) {
+        const savedButton = document.querySelector(`[data-tab="${savedTab}"]`);
+        if (savedButton) {
+          savedButton.click();
+        }
+      }
+    });
+  </script>
+</body>
+</html>
+
+
